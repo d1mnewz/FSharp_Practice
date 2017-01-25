@@ -1,8 +1,11 @@
 open System;
-let pow digit power = Math.Pow(digit, power)
+let ReadString _ = Console.ReadLine();
+let ReadInput convert = ReadString () |> convert; 
 
 let main() = 
-    let a = Console.ReadLine() |> float
-    let b = Console.ReadLine() |> float
-    Console.WriteLine(pow a b)
-main()
+    //let a = ReadInput float // |> - what type of result we want from console.readline()
+    //let b = ReadInput float // actually this is a explicit cast operator like (int)a
+    Console.WriteLine(Math.Pow(ReadInput float, ReadInput float))
+main() // started wrtiting in vs code
+
+// refactored so now it looks like functional programming
