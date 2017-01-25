@@ -11,3 +11,4 @@ let main() = // the way of getting void function
       Console.WriteLine("sign of -21367: {0}", (sign -21367));
 
 main();
+// actually i feel more comfortable with semicolons
