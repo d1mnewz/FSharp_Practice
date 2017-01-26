@@ -4,7 +4,7 @@ let ReadInput convert = ReadString () |> convert;
 
 let main() = 
 
-    // ** is exponentiation operator in f#
+    // ** is exponentiation operator in f#, raises an operand to the power of another
     Console.WriteLine(ReadInput float ** ReadInput float)
 
     
