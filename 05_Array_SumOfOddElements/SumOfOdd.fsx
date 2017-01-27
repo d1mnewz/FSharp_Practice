@@ -29,6 +29,5 @@ let main () =
     Console.WriteLine();
     Console.WriteLine("Sum of all elements = {0}",  Seq.sum(arr)); // sum of all elements
     Console.WriteLine("Sum of all odd elements = {0}", SumOfOdd arr); // sum of all odd elements
-    
 
 main()
