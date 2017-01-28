@@ -13,7 +13,7 @@ let main () =
         then  status <-  DayTime.Morning;
     elif (hour > 12 && hour < 18)
         then status <- DayTime.Afternoon;
-    elif (hour > 18 && hour < 20)
+    elif (hour > 18 && hour < 23)
         then status <- DayTime.Evening;
     else status <- DayTime.Night;
     printfn "%A" status;
