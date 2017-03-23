@@ -5,7 +5,7 @@ let rec fib n =                     // simply like switch
     | _ -> fib (n - 1) + fib (n - 2) // default result
 
 let main() =
-    for i = 1 to 10 do
-        printfn "Fibonacci #%d: %d" i ( fib(i) )
+    for i in [1..10] do
+        printfn "Fibonacci #%d: %d" i (fib(i))
 
 main();
