@@ -27,15 +27,13 @@ let fact n = iter 1 n (*) 1 // iteration from 1 to n that every time multiplyes 
 // in our case we have already written iter, so we can use it to define factorial
 
 let pow x n = iter 1 n (fun n acc -> acc * x) 1 // also we can use iter here, every time we multiply our accumulative digit with x
-                                                                                            // (accumulatio - summarisation of previosly made points)
+// fun n acc -> acc * x    that's lambda expression                                                    // (accumulatio - summarisation of previosly made points)
 //printfn "%f" (float (fact 5))
 let exp x =
          iter 0 x
             (fun n acc ->
                  acc + float (pow x n) / float (fact n)) 0.
 
-printfn "%f" (exp 4)
-
-
+printfn "%f" (exp 5)
 
 
