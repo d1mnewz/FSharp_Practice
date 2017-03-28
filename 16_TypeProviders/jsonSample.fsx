@@ -4,10 +4,16 @@ open FSharp.Data
 
 // http://www.omdbapi.com/?t=title
 
-let apiUrl = "http://www.omdbapi.com/?t=hello+world"
+let apiUrl = "http://www.omdbapi.com/?t=titanic";
+type filmP = JsonProvider<"http://www.omdbapi.com/?t=titanic">
+let film = filmP.Load(apiUrl);
 
-type filmParser = JsonProvider<"http://www.omdbapi.com/?t=what">
 
-let film = filmParser.Load(apiUrl);
+// let apiUrl = "http://www.omdbapi.com/?t=hello+world"
 
-printfn "%s" film.Genre
+
+// type filmParser = JsonProvider<"http://www.omdbapi.com/?t=what">
+
+// let film = filmParser.Load(apiUrl);
+
+// printfn "%s" film.Genre

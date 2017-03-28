@@ -1,5 +1,5 @@
 let rec fib n =                     // simply like switch, but much more powerful
-    match n with                     // this is pattern matching syntax
+     match n with                     // this is pattern matching syntax
     | 0 -> 0                         // case 0:
     | 1 -> 1                         // case 1:
     | _ -> fib (n - 1) + fib (n - 2) // default result
