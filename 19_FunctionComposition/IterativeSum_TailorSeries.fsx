@@ -6,7 +6,7 @@
 // i will make it even more unreadable, i will do it recursive + functional.
 
 // here i've got something to explain or your brain will blow up
-let rec iter a b f i = // loop from a to b, applying every time function f to result, and starting from index i
+let rec iter a b f i = // like loop from a to b, applying every time function f to result, and starting from index i
     if a > b then i;
     else f a (iter (a+1) b f i) 
     
