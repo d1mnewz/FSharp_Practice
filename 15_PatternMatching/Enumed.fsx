@@ -5,7 +5,7 @@ type Speaker = {speechTheme:string}
 type Developer = {stack:string}
 type Student = {studiesAt:string}
 
-type Position =                     // enum
+type Position =                     // sort of enum on steroids - dicrimminated union
     | Organizator of Organizator
     | Speaker of Speaker
     | Developer of Developer

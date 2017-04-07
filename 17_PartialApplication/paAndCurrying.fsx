@@ -19,6 +19,9 @@ let incDima = add 42
 printfn "%d" (incDima 13);
 
 
-//printfn "%d" (increment 41);
+
+
+
+
 
 

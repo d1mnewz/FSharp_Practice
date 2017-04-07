@@ -5,7 +5,7 @@
 let distance = 100.0<m>
 let time = 5.0<s>
 let bananas = 10<ban>;
-let speed (x : float<m>) (y : float<s>) = x / y
+let speed (x : float<m>) (y : float<s>) = x / y // can remove type declaration
 
 speed distance time
 
