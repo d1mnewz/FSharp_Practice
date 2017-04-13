@@ -8,7 +8,7 @@ let server = "smtp.gmail.com" // ConfigurationManager.AppSettings.["mailserver"]
 let sender = "fsharpie.send@gmail.com" // ConfigurationManager.AppSettings.["mailsender"]
 let password = "fsharpAWESOME" // ConfigurationManager.AppSettings.["mailpassword"] |> my-decrypt
 let port = 587
-let SendTest email topic msg = // doeesnt work
+let SendTest email topic msg = 
     use msg = 
         new MailMessage(
             sender, email, topic, 
