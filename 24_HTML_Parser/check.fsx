@@ -5,18 +5,17 @@ open System
 open System.Net.Mail
 
 let server = "smtp.gmail.com" // ConfigurationManager.AppSettings.["mailserver"]
-let sender = "icanmakeyoucryo.o@gmail.com" // ConfigurationManager.AppSettings.["mailsender"]
-let password = "arizonaboys" // ConfigurationManager.AppSettings.["mailpassword"] |> my-decrypt
+let sender = "fsharpie.send@gmail.com" // ConfigurationManager.AppSettings.["mailsender"]
+let password = "fsharpAWESOME" // ConfigurationManager.AppSettings.["mailpassword"] |> my-decrypt
 let port = 587
 let SendTest email topic msg = // doeesnt work
     use msg = 
         new MailMessage(
             sender, email, topic, 
             msg)
-            
-    msg.Bcc.Add "d1mnewz@gmail.com"
-    use client = new SmtpClient(server, port)
+    let client = new SmtpClient(server, port)
     client.EnableSsl <- true
+    client.Timeout <- 20000
     client.DeliveryMethod <- SmtpDeliveryMethod.Network
     client.UseDefaultCredentials <- false
     client.Credentials <- System.Net.NetworkCredential(sender, password)
