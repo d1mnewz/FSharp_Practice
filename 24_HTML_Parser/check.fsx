@@ -8,7 +8,7 @@ let server = "smtp.gmail.com" // ConfigurationManager.AppSettings.["mailserver"]
 let sender = "icanmakeyoucryo.o@gmail.com" // ConfigurationManager.AppSettings.["mailsender"]
 let password = "arizonaboys" // ConfigurationManager.AppSettings.["mailpassword"] |> my-decrypt
 let port = 587
-let SendTest email topic msg =
+let SendTest email topic msg = // doeesnt work
     use msg = 
         new MailMessage(
             sender, email, topic, 
